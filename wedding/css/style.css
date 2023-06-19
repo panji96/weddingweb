@@ -1,0 +1,123 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* DEFAULT STYLE */
+body{
+	margin: 0;
+	line-height: 1.5;
+	font-size: 16px; 
+	font-weight: 400;
+}
+* :not(i){
+	font-family: 'roboto', sans-serif ;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+:before,:after{
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+	vertical-align: middle;
+}
+.container{
+	max-width: 1140px;
+	margin:auto; 
+}
+header,
+section,
+footer{
+	display: block;
+	width: 100%;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.justify-content-between{
+	justify-content: space-between;
+}
+.align-items-center{
+	align-items: center;
+}
+
+/* HEADER */
+.header{
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 99;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.header .logo{
+	padding: 0 15px;
+}
+
+.header .logo{
+	font-size: 30px;
+	color:white;
+	font-weight: bold;
+	font-family: 'Great Vibes', cursive;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.header .nav{
+	padding: 0 15px;
+}
+.header .nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.header .nav ul li{
+	display: inline-block;
+	margin-left: 30px;	
+}
+.header nav ul li a{
+	display: block;
+	padding: 25px 0;
+	color: #ffffff;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+
+
+
+/* HOME SECTION */
+.home-section{
+	min-height: 100vh;
+	background-color: gray;
+} 
+
+.home-section .slide{
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.home-section .slide before{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	right: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.home-section .row{
+	min-height: 100vh;
+}
